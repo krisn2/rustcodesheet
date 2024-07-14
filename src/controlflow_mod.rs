@@ -18,9 +18,8 @@ pub mod conditional {
 pub mod loops {
 
     pub fn test_for(){
-        for mut i in 0..5 {
+        for i in 0..5 {
             print!("{}",i);
-            i +=1;
         }
     }
 
