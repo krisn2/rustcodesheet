@@ -1,6 +1,7 @@
 pub mod data_type_mod;
 pub mod controlflow_mod;
 pub mod closures;
+pub mod mystruct;
 
 fn main() {
      // All data type in that module
@@ -8,10 +9,14 @@ fn main() {
 
      // All control flow in that module like conditional and loops
      controlflow_mod::conditional::test_if();
-     controlflow_mod::loops::test_for();
-     controlflow_mod::loops::test_while();
-     controlflow_mod::loops::test_loop();
+    //  controlflow_mod::loops::test_for();
+    //  controlflow_mod::loops::test_while();
+    //  controlflow_mod::loops::test_loop();
 
      // All closure in that module
      closures::test_closure();
+
+     // Structure in rust 
+    let myperson = mystruct::new_person();
+    println!("fist name: {}, last name: {}, birth year: {}, birth month: {}", myperson.first_name, myperson.last_name, myperson.birth_year, myperson.birth_month);
 }

@@ -14,31 +14,4 @@ pub mod conditional {
 
     }
 }
-
-pub mod loops {
-
-    pub fn test_for(){
-        for i in 0..5 {
-            print!("{}",i);
-        }
-    }
-
-    pub fn test_while(){
-        let i = 3;
-        while i > 0 {
-            print!("Waiting...;");
-        }
-    }
-
-    pub fn test_loop(){
-        let mut i = 5;
-        loop  {
-            print!("Waiting...;");
-
-            if i == 5 {
-                break;
-            }
-            i += 1;
-        }
-    }
-}
+ 
