@@ -1,3 +1,5 @@
+use crate::mystruct::{test_create_person, test_create_car};
+
 pub mod data_type_mod;
 pub mod controlflow_mod;
 pub mod closures;
@@ -17,6 +19,6 @@ fn main() {
      closures::test_closure();
 
      // Structure in rust 
-    let myperson = mystruct::new_person();
-    println!("fist name: {}, last name: {}, birth year: {}, birth month: {}", myperson.first_name, myperson.last_name, myperson.birth_year, myperson.birth_month);
+     mystruct::test_create_person();
+     mystruct::test_create_car();
 }
