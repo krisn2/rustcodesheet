@@ -1,3 +1,8 @@
+// closure is an anonymous function that can be passed as an argument to another function
+// closure is a function that can be stored in a variable or passed as an argument to another function
+// it's like callback function in javascript
+
+
 pub fn test_closure(){
     // add closure 
     let add = |x:u32, y:u32|{
