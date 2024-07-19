@@ -22,14 +22,19 @@ struct Car {
     year: u16,
     color:Color
 }
-
+impl Car {
+    fn paint(& mut self, new_color: Color) {
+        self.color = new_color;
+    }
+}
 fn new_car() -> Car {
-    let c1 = Car{
+    let mut  c1 = Car{
         manufacturer: String::from("Mustang"),
         model: String::from("1969"),
         year: 1969,
         color: Color::Black
     };
+     c1.paint(Color::White);
     return c1;
 }
 

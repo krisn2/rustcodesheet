@@ -1,9 +1,10 @@
-use crate::mystruct::{test_create_person, test_create_car};
+// use crate::mystruct::{test_create_person, test_create_car};
 
 pub mod data_type_mod;
 pub mod controlflow_mod;
 pub mod closures;
 pub mod mystruct;
+pub mod traits_rust;
 
 fn main() {
      // All data type in that module
@@ -21,4 +22,7 @@ fn main() {
      // Structure in rust 
      mystruct::test_create_person();
      mystruct::test_create_car();
+
+     // Traits in rust
+     traits_rust::test_home();
 }
