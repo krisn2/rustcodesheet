@@ -5,13 +5,15 @@ pub mod controlflow_mod;
 pub mod closures;
 pub mod mystruct;
 pub mod traits_rust;
+pub mod vector;
 
 fn main() {
      // All data type in that module
      data_type_mod::data_types();
 
      // All control flow in that module like conditional and loops
-     controlflow_mod::conditional::test_if();
+     
+     // controlflow_mod::conditional::test_if();
     //  controlflow_mod::loops::test_for();
     //  controlflow_mod::loops::test_while();
     //  controlflow_mod::loops::test_loop();
@@ -25,4 +27,8 @@ fn main() {
 
      // Traits in rust
      traits_rust::test_home();
+
+     // Vector in rust
+     vector::text_vec_int();
+     vector::text_vec_string();
 }
