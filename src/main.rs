@@ -6,6 +6,8 @@ pub mod closures;
 pub mod mystruct;
 pub mod traits_rust;
 pub mod vector;
+pub mod hashmap_rust;
+pub mod hashset_rust;
 
 fn main() {
      // All data type in that module
@@ -31,4 +33,10 @@ fn main() {
      // Vector in rust
      vector::text_vec_int();
      vector::text_vec_string();
+
+     // Hashmap in rust
+     hashmap_rust::test_hashmap();
+
+     // Hashset in rust
+     hashset_rust::test_hashset();
 }
