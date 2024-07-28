@@ -8,6 +8,7 @@ pub mod traits_rust;
 pub mod vector;
 pub mod hashmap_rust;
 pub mod hashset_rust;
+pub mod mythread;
 
 fn main() {
      // All data type in that module
@@ -39,4 +40,7 @@ fn main() {
 
      // Hashset in rust
      hashset_rust::test_hashset();
+
+     // threads in rust 
+     mythread::spawn_threads();
 }
